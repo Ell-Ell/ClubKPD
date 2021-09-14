@@ -1,0 +1,141 @@
+.body__container {
+  background-color: rgb(12, 124, 124);
+  width: 100px auto;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* @media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+} */
+
+/* -----------SBROS-------- */
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.address {
+  font-style: normal;
+}
+/* ----------------SBROS Zakonchen */
+
+#regForm {
+  background-color: rgb(12, 124, 124);
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 200px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 70%;
+  font-size: 15px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #a42abd;
+}
+/* -------------------------Кнопка-----------------------------------------  */
+.button {
+  border-radius: 7px;
+  background-color: #8d17ee;
+  border: 2px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+  padding: 13px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
