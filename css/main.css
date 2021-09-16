@@ -1,34 +1,44 @@
-.body__container {
-  background-color: rgb(12, 124, 124);
-  width: 100px auto;
-  margin: 0 auto;
-  padding: 0 15px;
+@import './button.css';
+@import './container.css';
+/* @import './utils/visually-hidden';
+@import './base/container'; */
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondery-font: 'Raleway', sans-serif;
+  --accent-color: #2196f3;
+  --title-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-white-color: #ffffff;
+  --footer-background-color: #2f303a;
+  --button-back-color: #f5f4fa;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --hero-background-color: #2f303a;
+  --body-color: #e5e5e5;
+  --timing-funktion: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* @media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    margin: 0 auto;
-  }
+body {
+  font-family: var(--main-font);
+  color: var(--secondary-text-color);
+  background-color: var(--primary-white-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-} */
-
-/* -----------SBROS-------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
   padding: 0;
 }
+
 ul,
 ol {
   margin: 0;
@@ -37,108 +47,14 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
 .link {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
-}
-.address {
-  font-style: normal;
-}
-/* ----------------SBROS Zakonchen */
-.picture {
-  display: block;
-  border-radius: 30px;
-}
-#regForm {
-  background-color: rgb(12, 124, 124);
-  margin: 100px auto;
-  padding: 40px;
-  width: 70%;
-  min-width: 200px;
-}
-
-/* Style the input fields */
-input {
-  padding: 10px;
-  width: 100%;
-  font-size: 15px;
-  font-family: Raleway;
-  border-radius: 10px;
-  border: 5px solid #526112;
-}
-
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #ffdddd;
-}
-
-/* Hide all steps by default: */
-.tab {
-  display: none;
-}
-
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-/* Mark the active step: */
-.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-  background-color: #a42abd;
-}
-/* -------------------------Кнопка-----------------------------------------  */
-.button {
-  border-radius: 7px;
-  background-color: #526112;
-  border: 2px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 13px;
-  padding: 13px;
-  width: 120px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
 }
