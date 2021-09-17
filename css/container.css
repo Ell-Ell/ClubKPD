@@ -1,5 +1,17 @@
-.container {
-  width: 1200px;
+.body__container {
+  /* background-color: burlywood; */
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
+  background-image: url('/image/kusja.jpg');
+  min-width: 918px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container__form {
+  display:block;
+  padding-top: 400px;
+  padding-bottom: 300px;
+  margin: 0 auto;
 }

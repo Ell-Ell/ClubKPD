@@ -1,0 +1,13 @@
+.form {
+  display: block;
+  max-width: 40%;
+  margin-left: auto;
+  padding-right: 50px;
+
+}
+.answer{
+    border-radius: 20px;
+}
+.question{
+    border-radius: 20px;
+}

@@ -1,9 +1,9 @@
 @import './button.css';
 @import './container.css';
-/* @import './utils/visually-hidden';
-@import './base/container'; */
+@import './form.css';
+/* @import './base/container';  */
 
-:root {
+/* :root {
   --main-font: 'Roboto', sans-serif;
   --secondery-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
@@ -16,12 +16,11 @@
   --hero-background-color: #2f303a;
   --body-color: #e5e5e5;
   --timing-funktion: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 body {
-  font-family: var(--main-font);
-  color: var(--secondary-text-color);
-  background-color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
@@ -57,4 +56,14 @@ img {
 
 .list {
   list-style: none;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.hero__title {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
